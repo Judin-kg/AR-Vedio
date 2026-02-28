@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState} from "react";
 import axios from "axios";
 import { API_BASE } from "../config";
 import "./admin.css";
@@ -21,7 +21,7 @@ export default function Admin() {
 
   useEffect(() => {
     fetchTargets();
-  }, []);
+  }, [fetchTargets]);
 
   const handleUpload = async (e) => {
     e.preventDefault();
